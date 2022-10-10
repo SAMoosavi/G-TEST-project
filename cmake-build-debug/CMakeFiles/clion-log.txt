@@ -1,13 +1,4 @@
 /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/ninja/linux/ninja -G Ninja -S "/home/moosavi/Desktop/G_TEST matrix" -B "/home/moosavi/Desktop/G_TEST matrix/cmake-build-debug"
 -- Configuring done
-CMake Error at CMakeLists.txt:12 (add_executable):
-  Cannot find source file:
-
-    src/Matrix.cpp
-
-
-CMake Error at CMakeLists.txt:12 (add_executable):
-  No SOURCES given to target: G_TEST_matrix
-
-
-CMake Generate step failed.  Build files cannot be regenerated correctly.
+-- Generating done
+-- Build files have been written to: /home/moosavi/Desktop/G_TEST matrix/cmake-build-debug

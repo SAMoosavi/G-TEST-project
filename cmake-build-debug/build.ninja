@@ -49,13 +49,33 @@ cmake_ninja_workdir = /home/moosavi/Desktop/G_TEST$ matrix/cmake-build-debug/
 
 build cmake_object_order_depends_target_G_TEST_matrix: phony || CMakeFiles/G_TEST_matrix.dir
 
+build CMakeFiles/G_TEST_matrix.dir/src/Matrix.cpp.o: CXX_COMPILER__G_TEST_matrix_Debug /home/moosavi/Desktop/G_TEST$ matrix/src/Matrix.cpp || cmake_object_order_depends_target_G_TEST_matrix
+  DEP_FILE = CMakeFiles/G_TEST_matrix.dir/src/Matrix.cpp.o.d
+  FLAGS = -g -std=gnu++14
+  INCLUDES = -I"/home/moosavi/Desktop/G_TEST matrix/include"
+  OBJECT_DIR = CMakeFiles/G_TEST_matrix.dir
+  OBJECT_FILE_DIR = CMakeFiles/G_TEST_matrix.dir/src
+
+build CMakeFiles/G_TEST_matrix.dir/src/MatrixError.cpp.o: CXX_COMPILER__G_TEST_matrix_Debug /home/moosavi/Desktop/G_TEST$ matrix/src/MatrixError.cpp || cmake_object_order_depends_target_G_TEST_matrix
+  DEP_FILE = CMakeFiles/G_TEST_matrix.dir/src/MatrixError.cpp.o.d
+  FLAGS = -g -std=gnu++14
+  INCLUDES = -I"/home/moosavi/Desktop/G_TEST matrix/include"
+  OBJECT_DIR = CMakeFiles/G_TEST_matrix.dir
+  OBJECT_FILE_DIR = CMakeFiles/G_TEST_matrix.dir/src
+
+build CMakeFiles/G_TEST_matrix.dir/src/HelperFunctions.cpp.o: CXX_COMPILER__G_TEST_matrix_Debug /home/moosavi/Desktop/G_TEST$ matrix/src/HelperFunctions.cpp || cmake_object_order_depends_target_G_TEST_matrix
+  DEP_FILE = CMakeFiles/G_TEST_matrix.dir/src/HelperFunctions.cpp.o.d
+  FLAGS = -g -std=gnu++14
+  INCLUDES = -I"/home/moosavi/Desktop/G_TEST matrix/include"
+  OBJECT_DIR = CMakeFiles/G_TEST_matrix.dir
+  OBJECT_FILE_DIR = CMakeFiles/G_TEST_matrix.dir/src
+
 build CMakeFiles/G_TEST_matrix.dir/main.cpp.o: CXX_COMPILER__G_TEST_matrix_Debug /home/moosavi/Desktop/G_TEST$ matrix/main.cpp || cmake_object_order_depends_target_G_TEST_matrix
   DEP_FILE = CMakeFiles/G_TEST_matrix.dir/main.cpp.o.d
   FLAGS = -g -std=gnu++14
+  INCLUDES = -I"/home/moosavi/Desktop/G_TEST matrix/include"
   OBJECT_DIR = CMakeFiles/G_TEST_matrix.dir
   OBJECT_FILE_DIR = CMakeFiles/G_TEST_matrix.dir
-  TARGET_COMPILE_PDB = CMakeFiles/G_TEST_matrix.dir/
-  TARGET_PDB = G_TEST_matrix.pdb
 
 
 # =============================================================================
@@ -65,14 +85,13 @@ build CMakeFiles/G_TEST_matrix.dir/main.cpp.o: CXX_COMPILER__G_TEST_matrix_Debug
 #############################################
 # Link the executable G_TEST_matrix
 
-build G_TEST_matrix: CXX_EXECUTABLE_LINKER__G_TEST_matrix_Debug CMakeFiles/G_TEST_matrix.dir/main.cpp.o
+build G_TEST_matrix: CXX_EXECUTABLE_LINKER__G_TEST_matrix_Debug CMakeFiles/G_TEST_matrix.dir/src/Matrix.cpp.o CMakeFiles/G_TEST_matrix.dir/src/MatrixError.cpp.o CMakeFiles/G_TEST_matrix.dir/src/HelperFunctions.cpp.o CMakeFiles/G_TEST_matrix.dir/main.cpp.o
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/G_TEST_matrix.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_COMPILE_PDB = CMakeFiles/G_TEST_matrix.dir/
   TARGET_FILE = G_TEST_matrix
-  TARGET_PDB = G_TEST_matrix.pdb
+  TARGET_PDB = G_TEST_matrix.dbg
 
 
 #############################################
@@ -98,8 +117,520 @@ build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
 
 build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 
+
+#############################################
+# Utility command for list_install_components
+
+build list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build CMakeFiles/install.util: CUSTOM_COMMAND all
+  COMMAND = cd "/home/moosavi/Desktop/G_TEST matrix/cmake-build-debug" && /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/bin/cmake -P cmake_install.cmake
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build install: phony CMakeFiles/install.util
+
+
+#############################################
+# Utility command for install/local
+
+build CMakeFiles/install/local.util: CUSTOM_COMMAND all
+  COMMAND = cd "/home/moosavi/Desktop/G_TEST matrix/cmake-build-debug" && /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build install/local: phony CMakeFiles/install/local.util
+
+
+#############################################
+# Utility command for install/strip
+
+build CMakeFiles/install/strip.util: CUSTOM_COMMAND all
+  COMMAND = cd "/home/moosavi/Desktop/G_TEST matrix/cmake-build-debug" && /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build install/strip: phony CMakeFiles/install/strip.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /home/moosavi/Desktop/G_TEST matrix/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for EXECUTABLE target G_TEST_run
+
+
+#############################################
+# Order-only phony target for G_TEST_run
+
+build cmake_object_order_depends_target_G_TEST_run: phony || cmake_object_order_depends_target_gtest cmake_object_order_depends_target_gtest_main
+
+build test/CMakeFiles/G_TEST_run.dir/HelperFunctionsTest.cpp.o: CXX_COMPILER__G_TEST_run_Debug /home/moosavi/Desktop/G_TEST$ matrix/test/HelperFunctionsTest.cpp || cmake_object_order_depends_target_G_TEST_run
+  DEP_FILE = test/CMakeFiles/G_TEST_run.dir/HelperFunctionsTest.cpp.o.d
+  FLAGS = -g -std=gnu++14
+  INCLUDES = -isystem "/home/moosavi/Desktop/G_TEST matrix/test/lib/googletest-main/googletest/include" -isystem "/home/moosavi/Desktop/G_TEST matrix/test/lib/googletest-main/googletest"
+  OBJECT_DIR = test/CMakeFiles/G_TEST_run.dir
+  OBJECT_FILE_DIR = test/CMakeFiles/G_TEST_run.dir
+
+build test/CMakeFiles/G_TEST_run.dir/MatrixTest.cpp.o: CXX_COMPILER__G_TEST_run_Debug /home/moosavi/Desktop/G_TEST$ matrix/test/MatrixTest.cpp || cmake_object_order_depends_target_G_TEST_run
+  DEP_FILE = test/CMakeFiles/G_TEST_run.dir/MatrixTest.cpp.o.d
+  FLAGS = -g -std=gnu++14
+  INCLUDES = -isystem "/home/moosavi/Desktop/G_TEST matrix/test/lib/googletest-main/googletest/include" -isystem "/home/moosavi/Desktop/G_TEST matrix/test/lib/googletest-main/googletest"
+  OBJECT_DIR = test/CMakeFiles/G_TEST_run.dir
+  OBJECT_FILE_DIR = test/CMakeFiles/G_TEST_run.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target G_TEST_run
+
+
+#############################################
+# Link the executable test/G_TEST_run
+
+build test/G_TEST_run: CXX_EXECUTABLE_LINKER__G_TEST_run_Debug test/CMakeFiles/G_TEST_run.dir/HelperFunctionsTest.cpp.o test/CMakeFiles/G_TEST_run.dir/MatrixTest.cpp.o | lib/libgtest.a lib/libgtest_main.a lib/libgtest.a || lib/libgtest.a lib/libgtest_main.a
+  FLAGS = -g
+  LINK_LIBRARIES = lib/libgtest.a  lib/libgtest_main.a  lib/libgtest.a
+  OBJECT_DIR = test/CMakeFiles/G_TEST_run.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = test/G_TEST_run
+  TARGET_PDB = G_TEST_run.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build test/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd "/home/moosavi/Desktop/G_TEST matrix/cmake-build-debug/test" && /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/bin/ccmake -S"/home/moosavi/Desktop/G_TEST matrix" -B"/home/moosavi/Desktop/G_TEST matrix/cmake-build-debug"
+  DESC = Running CMake cache editor...
+  pool = console
+  restat = 1
+
+build test/edit_cache: phony test/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build test/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd "/home/moosavi/Desktop/G_TEST matrix/cmake-build-debug/test" && /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/bin/cmake --regenerate-during-build -S"/home/moosavi/Desktop/G_TEST matrix" -B"/home/moosavi/Desktop/G_TEST matrix/cmake-build-debug"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build test/rebuild_cache: phony test/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build test/list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build test/CMakeFiles/install.util: CUSTOM_COMMAND test/all
+  COMMAND = cd "/home/moosavi/Desktop/G_TEST matrix/cmake-build-debug/test" && /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/bin/cmake -P cmake_install.cmake
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build test/install: phony test/CMakeFiles/install.util
+
+
+#############################################
+# Utility command for install/local
+
+build test/CMakeFiles/install/local.util: CUSTOM_COMMAND test/all
+  COMMAND = cd "/home/moosavi/Desktop/G_TEST matrix/cmake-build-debug/test" && /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build test/install/local: phony test/CMakeFiles/install/local.util
+
+
+#############################################
+# Utility command for install/strip
+
+build test/CMakeFiles/install/strip.util: CUSTOM_COMMAND test/all
+  COMMAND = cd "/home/moosavi/Desktop/G_TEST matrix/cmake-build-debug/test" && /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build test/install/strip: phony test/CMakeFiles/install/strip.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /home/moosavi/Desktop/G_TEST matrix/test/CMakeLists.txt
+# =============================================================================
+
+
+#############################################
+# Utility command for edit_cache
+
+build test/lib/googletest-main/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd "/home/moosavi/Desktop/G_TEST matrix/cmake-build-debug/test/lib/googletest-main" && /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/bin/ccmake -S"/home/moosavi/Desktop/G_TEST matrix" -B"/home/moosavi/Desktop/G_TEST matrix/cmake-build-debug"
+  DESC = Running CMake cache editor...
+  pool = console
+  restat = 1
+
+build test/lib/googletest-main/edit_cache: phony test/lib/googletest-main/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build test/lib/googletest-main/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd "/home/moosavi/Desktop/G_TEST matrix/cmake-build-debug/test/lib/googletest-main" && /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/bin/cmake --regenerate-during-build -S"/home/moosavi/Desktop/G_TEST matrix" -B"/home/moosavi/Desktop/G_TEST matrix/cmake-build-debug"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build test/lib/googletest-main/rebuild_cache: phony test/lib/googletest-main/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build test/lib/googletest-main/list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build test/lib/googletest-main/CMakeFiles/install.util: CUSTOM_COMMAND test/lib/googletest-main/all
+  COMMAND = cd "/home/moosavi/Desktop/G_TEST matrix/cmake-build-debug/test/lib/googletest-main" && /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/bin/cmake -P cmake_install.cmake
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build test/lib/googletest-main/install: phony test/lib/googletest-main/CMakeFiles/install.util
+
+
+#############################################
+# Utility command for install/local
+
+build test/lib/googletest-main/CMakeFiles/install/local.util: CUSTOM_COMMAND test/lib/googletest-main/all
+  COMMAND = cd "/home/moosavi/Desktop/G_TEST matrix/cmake-build-debug/test/lib/googletest-main" && /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build test/lib/googletest-main/install/local: phony test/lib/googletest-main/CMakeFiles/install/local.util
+
+
+#############################################
+# Utility command for install/strip
+
+build test/lib/googletest-main/CMakeFiles/install/strip.util: CUSTOM_COMMAND test/lib/googletest-main/all
+  COMMAND = cd "/home/moosavi/Desktop/G_TEST matrix/cmake-build-debug/test/lib/googletest-main" && /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build test/lib/googletest-main/install/strip: phony test/lib/googletest-main/CMakeFiles/install/strip.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /home/moosavi/Desktop/G_TEST matrix/test/lib/googletest-main/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target gmock
+
+
+#############################################
+# Order-only phony target for gmock
+
+build cmake_object_order_depends_target_gmock: phony || cmake_object_order_depends_target_gtest
+
+build test/lib/googletest-main/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.o: CXX_COMPILER__gmock_Debug /home/moosavi/Desktop/G_TEST$ matrix/test/lib/googletest-main/googlemock/src/gmock-all.cc || cmake_object_order_depends_target_gmock
+  DEP_FILE = test/lib/googletest-main/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.o.d
+  FLAGS = -g -Wall -Wshadow -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -std=c++14
+  INCLUDES = -I"/home/moosavi/Desktop/G_TEST matrix/test/lib/googletest-main/googlemock/include" -I"/home/moosavi/Desktop/G_TEST matrix/test/lib/googletest-main/googlemock" -isystem "/home/moosavi/Desktop/G_TEST matrix/test/lib/googletest-main/googletest/include" -isystem "/home/moosavi/Desktop/G_TEST matrix/test/lib/googletest-main/googletest"
+  OBJECT_DIR = test/lib/googletest-main/googlemock/CMakeFiles/gmock.dir
+  OBJECT_FILE_DIR = test/lib/googletest-main/googlemock/CMakeFiles/gmock.dir/src
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target gmock
+
+
+#############################################
+# Link the static library lib/libgmock.a
+
+build lib/libgmock.a: CXX_STATIC_LIBRARY_LINKER__gmock_Debug test/lib/googletest-main/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.o || lib/libgtest.a
+  LANGUAGE_COMPILE_FLAGS = -g
+  OBJECT_DIR = test/lib/googletest-main/googlemock/CMakeFiles/gmock.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = lib/libgmock.a
+  TARGET_PDB = gmock.a.dbg
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target gmock_main
+
+
+#############################################
+# Order-only phony target for gmock_main
+
+build cmake_object_order_depends_target_gmock_main: phony || cmake_object_order_depends_target_gmock cmake_object_order_depends_target_gtest
+
+build test/lib/googletest-main/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o: CXX_COMPILER__gmock_main_Debug /home/moosavi/Desktop/G_TEST$ matrix/test/lib/googletest-main/googlemock/src/gmock_main.cc || cmake_object_order_depends_target_gmock_main
+  DEP_FILE = test/lib/googletest-main/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o.d
+  FLAGS = -g -Wall -Wshadow -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -std=c++14
+  INCLUDES = -isystem "/home/moosavi/Desktop/G_TEST matrix/test/lib/googletest-main/googlemock/include" -isystem "/home/moosavi/Desktop/G_TEST matrix/test/lib/googletest-main/googlemock" -isystem "/home/moosavi/Desktop/G_TEST matrix/test/lib/googletest-main/googletest/include" -isystem "/home/moosavi/Desktop/G_TEST matrix/test/lib/googletest-main/googletest"
+  OBJECT_DIR = test/lib/googletest-main/googlemock/CMakeFiles/gmock_main.dir
+  OBJECT_FILE_DIR = test/lib/googletest-main/googlemock/CMakeFiles/gmock_main.dir/src
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target gmock_main
+
+
+#############################################
+# Link the static library lib/libgmock_main.a
+
+build lib/libgmock_main.a: CXX_STATIC_LIBRARY_LINKER__gmock_main_Debug test/lib/googletest-main/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o || lib/libgmock.a lib/libgtest.a
+  LANGUAGE_COMPILE_FLAGS = -g
+  OBJECT_DIR = test/lib/googletest-main/googlemock/CMakeFiles/gmock_main.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = lib/libgmock_main.a
+  TARGET_PDB = gmock_main.a.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build test/lib/googletest-main/googlemock/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd "/home/moosavi/Desktop/G_TEST matrix/cmake-build-debug/test/lib/googletest-main/googlemock" && /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/bin/ccmake -S"/home/moosavi/Desktop/G_TEST matrix" -B"/home/moosavi/Desktop/G_TEST matrix/cmake-build-debug"
+  DESC = Running CMake cache editor...
+  pool = console
+  restat = 1
+
+build test/lib/googletest-main/googlemock/edit_cache: phony test/lib/googletest-main/googlemock/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build test/lib/googletest-main/googlemock/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd "/home/moosavi/Desktop/G_TEST matrix/cmake-build-debug/test/lib/googletest-main/googlemock" && /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/bin/cmake --regenerate-during-build -S"/home/moosavi/Desktop/G_TEST matrix" -B"/home/moosavi/Desktop/G_TEST matrix/cmake-build-debug"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build test/lib/googletest-main/googlemock/rebuild_cache: phony test/lib/googletest-main/googlemock/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build test/lib/googletest-main/googlemock/list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build test/lib/googletest-main/googlemock/CMakeFiles/install.util: CUSTOM_COMMAND test/lib/googletest-main/googlemock/all
+  COMMAND = cd "/home/moosavi/Desktop/G_TEST matrix/cmake-build-debug/test/lib/googletest-main/googlemock" && /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/bin/cmake -P cmake_install.cmake
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build test/lib/googletest-main/googlemock/install: phony test/lib/googletest-main/googlemock/CMakeFiles/install.util
+
+
+#############################################
+# Utility command for install/local
+
+build test/lib/googletest-main/googlemock/CMakeFiles/install/local.util: CUSTOM_COMMAND test/lib/googletest-main/googlemock/all
+  COMMAND = cd "/home/moosavi/Desktop/G_TEST matrix/cmake-build-debug/test/lib/googletest-main/googlemock" && /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build test/lib/googletest-main/googlemock/install/local: phony test/lib/googletest-main/googlemock/CMakeFiles/install/local.util
+
+
+#############################################
+# Utility command for install/strip
+
+build test/lib/googletest-main/googlemock/CMakeFiles/install/strip.util: CUSTOM_COMMAND test/lib/googletest-main/googlemock/all
+  COMMAND = cd "/home/moosavi/Desktop/G_TEST matrix/cmake-build-debug/test/lib/googletest-main/googlemock" && /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build test/lib/googletest-main/googlemock/install/strip: phony test/lib/googletest-main/googlemock/CMakeFiles/install/strip.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /home/moosavi/Desktop/G_TEST matrix/test/lib/googletest-main/googlemock/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target gtest
+
+
+#############################################
+# Order-only phony target for gtest
+
+build cmake_object_order_depends_target_gtest: phony || test/lib/googletest-main/googletest/CMakeFiles/gtest.dir
+
+build test/lib/googletest-main/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o: CXX_COMPILER__gtest_Debug /home/moosavi/Desktop/G_TEST$ matrix/test/lib/googletest-main/googletest/src/gtest-all.cc || cmake_object_order_depends_target_gtest
+  DEP_FILE = test/lib/googletest-main/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o.d
+  FLAGS = -g -Wall -Wshadow -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -std=c++14
+  INCLUDES = -I"/home/moosavi/Desktop/G_TEST matrix/test/lib/googletest-main/googletest/include" -I"/home/moosavi/Desktop/G_TEST matrix/test/lib/googletest-main/googletest"
+  OBJECT_DIR = test/lib/googletest-main/googletest/CMakeFiles/gtest.dir
+  OBJECT_FILE_DIR = test/lib/googletest-main/googletest/CMakeFiles/gtest.dir/src
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target gtest
+
+
+#############################################
+# Link the static library lib/libgtest.a
+
+build lib/libgtest.a: CXX_STATIC_LIBRARY_LINKER__gtest_Debug test/lib/googletest-main/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o
+  LANGUAGE_COMPILE_FLAGS = -g
+  OBJECT_DIR = test/lib/googletest-main/googletest/CMakeFiles/gtest.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = lib/libgtest.a
+  TARGET_PDB = gtest.a.dbg
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target gtest_main
+
+
+#############################################
+# Order-only phony target for gtest_main
+
+build cmake_object_order_depends_target_gtest_main: phony || cmake_object_order_depends_target_gtest
+
+build test/lib/googletest-main/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o: CXX_COMPILER__gtest_main_Debug /home/moosavi/Desktop/G_TEST$ matrix/test/lib/googletest-main/googletest/src/gtest_main.cc || cmake_object_order_depends_target_gtest_main
+  DEP_FILE = test/lib/googletest-main/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o.d
+  FLAGS = -g -Wall -Wshadow -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -std=c++14
+  INCLUDES = -isystem "/home/moosavi/Desktop/G_TEST matrix/test/lib/googletest-main/googletest/include" -isystem "/home/moosavi/Desktop/G_TEST matrix/test/lib/googletest-main/googletest"
+  OBJECT_DIR = test/lib/googletest-main/googletest/CMakeFiles/gtest_main.dir
+  OBJECT_FILE_DIR = test/lib/googletest-main/googletest/CMakeFiles/gtest_main.dir/src
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target gtest_main
+
+
+#############################################
+# Link the static library lib/libgtest_main.a
+
+build lib/libgtest_main.a: CXX_STATIC_LIBRARY_LINKER__gtest_main_Debug test/lib/googletest-main/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o || lib/libgtest.a
+  LANGUAGE_COMPILE_FLAGS = -g
+  OBJECT_DIR = test/lib/googletest-main/googletest/CMakeFiles/gtest_main.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = lib/libgtest_main.a
+  TARGET_PDB = gtest_main.a.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build test/lib/googletest-main/googletest/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd "/home/moosavi/Desktop/G_TEST matrix/cmake-build-debug/test/lib/googletest-main/googletest" && /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/bin/ccmake -S"/home/moosavi/Desktop/G_TEST matrix" -B"/home/moosavi/Desktop/G_TEST matrix/cmake-build-debug"
+  DESC = Running CMake cache editor...
+  pool = console
+  restat = 1
+
+build test/lib/googletest-main/googletest/edit_cache: phony test/lib/googletest-main/googletest/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build test/lib/googletest-main/googletest/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd "/home/moosavi/Desktop/G_TEST matrix/cmake-build-debug/test/lib/googletest-main/googletest" && /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/bin/cmake --regenerate-during-build -S"/home/moosavi/Desktop/G_TEST matrix" -B"/home/moosavi/Desktop/G_TEST matrix/cmake-build-debug"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build test/lib/googletest-main/googletest/rebuild_cache: phony test/lib/googletest-main/googletest/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build test/lib/googletest-main/googletest/list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build test/lib/googletest-main/googletest/CMakeFiles/install.util: CUSTOM_COMMAND test/lib/googletest-main/googletest/all
+  COMMAND = cd "/home/moosavi/Desktop/G_TEST matrix/cmake-build-debug/test/lib/googletest-main/googletest" && /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/bin/cmake -P cmake_install.cmake
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build test/lib/googletest-main/googletest/install: phony test/lib/googletest-main/googletest/CMakeFiles/install.util
+
+
+#############################################
+# Utility command for install/local
+
+build test/lib/googletest-main/googletest/CMakeFiles/install/local.util: CUSTOM_COMMAND test/lib/googletest-main/googletest/all
+  COMMAND = cd "/home/moosavi/Desktop/G_TEST matrix/cmake-build-debug/test/lib/googletest-main/googletest" && /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build test/lib/googletest-main/googletest/install/local: phony test/lib/googletest-main/googletest/CMakeFiles/install/local.util
+
+
+#############################################
+# Utility command for install/strip
+
+build test/lib/googletest-main/googletest/CMakeFiles/install/strip.util: CUSTOM_COMMAND test/lib/googletest-main/googletest/all
+  COMMAND = cd "/home/moosavi/Desktop/G_TEST matrix/cmake-build-debug/test/lib/googletest-main/googletest" && /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build test/lib/googletest-main/googletest/install/strip: phony test/lib/googletest-main/googletest/CMakeFiles/install/strip.util
+
 # =============================================================================
 # Target aliases.
+
+build G_TEST_run: phony test/G_TEST_run
+
+build gmock: phony lib/libgmock.a
+
+build gmock_main: phony lib/libgmock_main.a
+
+build gtest: phony lib/libgtest.a
+
+build gtest_main: phony lib/libgtest_main.a
+
+build libgmock.a: phony lib/libgmock.a
+
+build libgmock_main.a: phony lib/libgmock_main.a
+
+build libgtest.a: phony lib/libgtest.a
+
+build libgtest_main.a: phony lib/libgtest_main.a
 
 # =============================================================================
 # Folder targets.
@@ -109,7 +640,35 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 #############################################
 # Folder: /home/moosavi/Desktop/G_TEST matrix/cmake-build-debug
 
-build all: phony G_TEST_matrix
+build all: phony G_TEST_matrix test/all
+
+# =============================================================================
+
+#############################################
+# Folder: /home/moosavi/Desktop/G_TEST matrix/cmake-build-debug/test
+
+build test/all: phony test/G_TEST_run test/lib/googletest-main/all
+
+# =============================================================================
+
+#############################################
+# Folder: /home/moosavi/Desktop/G_TEST matrix/cmake-build-debug/test/lib/googletest-main
+
+build test/lib/googletest-main/all: phony test/lib/googletest-main/googlemock/all
+
+# =============================================================================
+
+#############################################
+# Folder: /home/moosavi/Desktop/G_TEST matrix/cmake-build-debug/test/lib/googletest-main/googlemock
+
+build test/lib/googletest-main/googlemock/all: phony lib/libgmock.a lib/libgmock_main.a test/lib/googletest-main/googletest/all
+
+# =============================================================================
+
+#############################################
+# Folder: /home/moosavi/Desktop/G_TEST matrix/cmake-build-debug/test/lib/googletest-main/googletest
+
+build test/lib/googletest-main/googletest/all: phony lib/libgtest.a lib/libgtest_main.a
 
 # =============================================================================
 # Built-in targets
@@ -118,14 +677,14 @@ build all: phony G_TEST_matrix
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | ../CMakeLists.txt /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/CMakeCCompiler.cmake.in /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/CMakeCCompilerABI.c /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/CMakeCInformation.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/CMakeCXXCompiler.cmake.in /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/CMakeCXXCompilerABI.cpp /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/CMakeCXXInformation.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/CMakeCommonLanguageInclude.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/CMakeCompilerIdDetection.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/CMakeDetermineCCompiler.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/CMakeDetermineCXXCompiler.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/CMakeDetermineCompileFeatures.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/CMakeDetermineCompiler.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/CMakeDetermineCompilerABI.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/CMakeDetermineCompilerId.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/CMakeDetermineSystem.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/CMakeFindBinUtils.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/CMakeGenericSystem.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/CMakeInitializeConfigs.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/CMakeLanguageInformation.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/CMakeParseImplicitIncludeInfo.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/CMakeParseImplicitLinkInfo.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/CMakeParseLibraryArchitecture.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/CMakeSystem.cmake.in /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/CMakeSystemSpecificInformation.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/CMakeSystemSpecificInitialize.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/CMakeTestCCompiler.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/CMakeTestCXXCompiler.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/CMakeTestCompilerCommon.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/ADSP-DetermineCompiler.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/ARMCC-DetermineCompiler.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/ARMClang-DetermineCompiler.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/AppleClang-DetermineCompiler.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/Borland-DetermineCompiler.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/Bruce-C-DetermineCompiler.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/CMakeCommonCompilerMacros.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/Clang-DetermineCompiler.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/Clang-DetermineCompilerInternal.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/Compaq-C-DetermineCompiler.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/Cray-DetermineCompiler.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/Embarcadero-DetermineCompiler.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/Fujitsu-DetermineCompiler.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/GHS-DetermineCompiler.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/GNU-C-DetermineCompiler.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/GNU-C.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/GNU-CXX.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/GNU-FindBinUtils.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/GNU.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/HP-C-DetermineCompiler.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/HP-CXX-DetermineCompiler.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/IAR-DetermineCompiler.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/IBMClang-C-DetermineCompiler.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/Intel-DetermineCompiler.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/LCC-C-DetermineCompiler.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/MSVC-DetermineCompiler.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/NVHPC-DetermineCompiler.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/NVIDIA-DetermineCompiler.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/PGI-DetermineCompiler.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/PathScale-DetermineCompiler.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/SCO-DetermineCompiler.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/SDCC-C-DetermineCompiler.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/SunPro-C-DetermineCompiler.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/TI-DetermineCompiler.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/Watcom-DetermineCompiler.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/XL-C-DetermineCompiler.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/XL-CXX-DetermineCompiler.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/XLClang-C-DetermineCompiler.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/zOS-C-DetermineCompiler.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/Internal/FeatureTesting.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/Platform/Linux-Determine-CXX.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/Platform/Linux-GNU-C.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/Platform/Linux-GNU-CXX.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/Platform/Linux-GNU.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/Platform/Linux.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.23.2/CMakeCCompiler.cmake CMakeFiles/3.23.2/CMakeCXXCompiler.cmake CMakeFiles/3.23.2/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | ../CMakeLists.txt ../test/CMakeLists.txt ../test/lib/googletest-main/CMakeLists.txt ../test/lib/googletest-main/googlemock/CMakeLists.txt ../test/lib/googletest-main/googlemock/cmake/gmock.pc.in ../test/lib/googletest-main/googlemock/cmake/gmock_main.pc.in ../test/lib/googletest-main/googletest/CMakeLists.txt ../test/lib/googletest-main/googletest/cmake/Config.cmake.in ../test/lib/googletest-main/googletest/cmake/gtest.pc.in ../test/lib/googletest-main/googletest/cmake/gtest_main.pc.in ../test/lib/googletest-main/googletest/cmake/internal_utils.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/BasicConfigVersion-AnyNewerVersion.cmake.in /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/CMakeCInformation.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/CMakeCXXInformation.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/CMakeCommonLanguageInclude.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/CMakeDependentOption.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/CMakeGenericSystem.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/CMakeInitializeConfigs.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/CMakeLanguageInformation.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/CMakePackageConfigHelpers.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/CMakeSystemSpecificInformation.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/CMakeSystemSpecificInitialize.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/CheckCSourceCompiles.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/CheckIncludeFile.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/CheckLibraryExists.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/CMakeCommonCompilerMacros.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/GNU-C.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/GNU-CXX.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/GNU.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/FindPackageHandleStandardArgs.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/FindPackageMessage.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/FindPython.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/FindPython/Support.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/FindThreads.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/GNUInstallDirs.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/Internal/CheckSourceCompiles.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/Platform/Linux-GNU-C.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/Platform/Linux-GNU-CXX.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/Platform/Linux-GNU.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/Platform/Linux.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/Platform/UnixPaths.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/WriteBasicConfigVersionFile.cmake CMakeCache.txt CMakeFiles/3.23.2/CMakeCCompiler.cmake CMakeFiles/3.23.2/CMakeCXXCompiler.cmake CMakeFiles/3.23.2/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build ../CMakeLists.txt /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/CMakeCCompiler.cmake.in /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/CMakeCCompilerABI.c /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/CMakeCInformation.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/CMakeCXXCompiler.cmake.in /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/CMakeCXXCompilerABI.cpp /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/CMakeCXXInformation.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/CMakeCommonLanguageInclude.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/CMakeCompilerIdDetection.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/CMakeDetermineCCompiler.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/CMakeDetermineCXXCompiler.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/CMakeDetermineCompileFeatures.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/CMakeDetermineCompiler.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/CMakeDetermineCompilerABI.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/CMakeDetermineCompilerId.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/CMakeDetermineSystem.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/CMakeFindBinUtils.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/CMakeGenericSystem.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/CMakeInitializeConfigs.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/CMakeLanguageInformation.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/CMakeParseImplicitIncludeInfo.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/CMakeParseImplicitLinkInfo.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/CMakeParseLibraryArchitecture.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/CMakeSystem.cmake.in /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/CMakeSystemSpecificInformation.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/CMakeSystemSpecificInitialize.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/CMakeTestCCompiler.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/CMakeTestCXXCompiler.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/CMakeTestCompilerCommon.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/ADSP-DetermineCompiler.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/ARMCC-DetermineCompiler.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/ARMClang-DetermineCompiler.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/AppleClang-DetermineCompiler.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/Borland-DetermineCompiler.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/Bruce-C-DetermineCompiler.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/CMakeCommonCompilerMacros.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/Clang-DetermineCompiler.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/Clang-DetermineCompilerInternal.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/Compaq-C-DetermineCompiler.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/Cray-DetermineCompiler.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/Embarcadero-DetermineCompiler.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/Fujitsu-DetermineCompiler.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/GHS-DetermineCompiler.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/GNU-C-DetermineCompiler.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/GNU-C.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/GNU-CXX.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/GNU-FindBinUtils.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/GNU.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/HP-C-DetermineCompiler.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/HP-CXX-DetermineCompiler.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/IAR-DetermineCompiler.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/IBMClang-C-DetermineCompiler.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/Intel-DetermineCompiler.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/LCC-C-DetermineCompiler.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/MSVC-DetermineCompiler.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/NVHPC-DetermineCompiler.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/NVIDIA-DetermineCompiler.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/PGI-DetermineCompiler.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/PathScale-DetermineCompiler.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/SCO-DetermineCompiler.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/SDCC-C-DetermineCompiler.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/SunPro-C-DetermineCompiler.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/TI-DetermineCompiler.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/Watcom-DetermineCompiler.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/XL-C-DetermineCompiler.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/XL-CXX-DetermineCompiler.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/XLClang-C-DetermineCompiler.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/zOS-C-DetermineCompiler.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/Internal/FeatureTesting.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/Platform/Linux-Determine-CXX.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/Platform/Linux-GNU-C.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/Platform/Linux-GNU-CXX.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/Platform/Linux-GNU.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/Platform/Linux.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.23.2/CMakeCCompiler.cmake CMakeFiles/3.23.2/CMakeCXXCompiler.cmake CMakeFiles/3.23.2/CMakeSystem.cmake: phony
+build ../CMakeLists.txt ../test/CMakeLists.txt ../test/lib/googletest-main/CMakeLists.txt ../test/lib/googletest-main/googlemock/CMakeLists.txt ../test/lib/googletest-main/googlemock/cmake/gmock.pc.in ../test/lib/googletest-main/googlemock/cmake/gmock_main.pc.in ../test/lib/googletest-main/googletest/CMakeLists.txt ../test/lib/googletest-main/googletest/cmake/Config.cmake.in ../test/lib/googletest-main/googletest/cmake/gtest.pc.in ../test/lib/googletest-main/googletest/cmake/gtest_main.pc.in ../test/lib/googletest-main/googletest/cmake/internal_utils.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/BasicConfigVersion-AnyNewerVersion.cmake.in /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/CMakeCInformation.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/CMakeCXXInformation.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/CMakeCommonLanguageInclude.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/CMakeDependentOption.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/CMakeGenericSystem.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/CMakeInitializeConfigs.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/CMakeLanguageInformation.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/CMakePackageConfigHelpers.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/CMakeSystemSpecificInformation.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/CMakeSystemSpecificInitialize.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/CheckCSourceCompiles.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/CheckIncludeFile.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/CheckLibraryExists.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/CMakeCommonCompilerMacros.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/GNU-C.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/GNU-CXX.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/GNU.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/FindPackageHandleStandardArgs.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/FindPackageMessage.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/FindPython.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/FindPython/Support.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/FindThreads.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/GNUInstallDirs.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/Internal/CheckSourceCompiles.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/Platform/Linux-GNU-C.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/Platform/Linux-GNU-CXX.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/Platform/Linux-GNU.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/Platform/Linux.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/Platform/UnixPaths.cmake /home/moosavi/JetBrains/JetBrains.CLion.2021.3.4/clion-2021.3.4/bin/cmake/linux/share/cmake-3.23/Modules/WriteBasicConfigVersionFile.cmake CMakeCache.txt CMakeFiles/3.23.2/CMakeCCompiler.cmake CMakeFiles/3.23.2/CMakeCXXCompiler.cmake CMakeFiles/3.23.2/CMakeSystem.cmake: phony
 
 
 #############################################
