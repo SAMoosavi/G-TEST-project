@@ -3,4 +3,15 @@ project(G_TEST_matrix)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(G_TEST_matrix main.cpp)
+set(SOURCES
+        src/Matrix.cpp
+        src/MatrixError.cpp
+        src/HelperFunctions.cpp
+        main.cpp)
+
+add_executable(G_TEST_matrix ${SOURCES})
+
+target_include_directories(G_TEST_matrix
+        PRIVATE
+        ${PROJECT_SOURCE_DIR}/include
+        )
