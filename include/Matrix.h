@@ -7,6 +7,8 @@
 
 
 #include "HelperFunctions.h"
+#include "MatrixError.h"
+
 
 template<typename T>
 class Matrix {
