@@ -15,3 +15,5 @@ target_include_directories(G_TEST_matrix
         PRIVATE
         ${PROJECT_SOURCE_DIR}/include
         )
+
+add_subdirectory(test)
