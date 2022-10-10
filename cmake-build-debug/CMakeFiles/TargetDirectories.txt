@@ -1,0 +1,3 @@
+/home/moosavi/Desktop/G_TEST matrix/cmake-build-debug/CMakeFiles/G_TEST_matrix.dir
+/home/moosavi/Desktop/G_TEST matrix/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/moosavi/Desktop/G_TEST matrix/cmake-build-debug/CMakeFiles/rebuild_cache.dir
