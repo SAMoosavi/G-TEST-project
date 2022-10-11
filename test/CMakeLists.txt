@@ -1,6 +1,6 @@
 # 'Google_test' is the subproject name
 project(Google_tests)
-
+cmake_minimum_required(VERSION 3.22)
 # 'lib' is the folder with Google Test sources
 add_subdirectory(lib/googletest-main)
 include_directories(${gtest_SOURCE_DIR}/include ${gtest_SOURCE_DIR})
