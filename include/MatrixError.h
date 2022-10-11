@@ -24,4 +24,6 @@ private:
     string errorMsg = "not correct size";
 };
 
+#include "../src/MatrixError.h"
+
 #endif //G_TEST_MATRIX_MATRIXERROR_H

@@ -20,4 +20,6 @@ private:
     HelperFunctions() = default;
 };
 
+#include "../src/HelperFunctions.h"
+
 #endif //G_TEST_MATRIX_HELPERFUNCTIONS_H

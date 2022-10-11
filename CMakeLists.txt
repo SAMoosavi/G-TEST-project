@@ -4,10 +4,11 @@ project(G_TEST_matrix)
 set(CMAKE_CXX_STANDARD 14)
 
 set(SOURCES
-        src/Matrix.cpp
-        src/MatrixError.cpp
-        src/HelperFunctions.cpp
-        main.cpp)
+        src/Matrix.h
+        src/MatrixError.h
+        src/HelperFunctions.h
+        main.cpp
+        )
 
 add_executable(G_TEST_matrix ${SOURCES})
 

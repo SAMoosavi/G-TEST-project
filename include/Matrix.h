@@ -62,5 +62,6 @@ private:
     bool multipliedValidation(const Matrix<T> &mat);
 };
 
+#include "../src/Matrix.h"
 
 #endif //G_TEST_MATRIX_MATRIX_H
