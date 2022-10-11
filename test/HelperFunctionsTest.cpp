@@ -66,10 +66,5 @@ TEST(HelperFunctionsDeleteMatrixTest, DeleteTest) {
     auto matrix = HelperFunctions::createMatrix<float>(3, 4);
     setValueInMatrix(row, col, matrix, 1.1f);
     HelperFunctions::deleteMatrix(row, matrix);
-    for (int i = 0; i < row; ++i) {
-        for (int j = 0; j < col; ++j) {
-            EXPECT_NE(matrix[i][j], 1.1f);
-        }
-    }
     EXPECT_EQ(matrix, nullptr);
 }
