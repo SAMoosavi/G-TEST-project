@@ -101,8 +101,9 @@ bool Matrix<T>::multipliedValidation(const Matrix<T> &mat) {
 template<typename T>
 void Matrix<T>::multiplied(const Matrix<T> &mat) {
     if (this->multipliedValidation(mat)) {
+        auto matrixTemplate = this->multiplier(mat);
         HelperFunctions::deleteMatrix<T>(this->_row, this->_matrix);
-        this->_matrix = this->multiplier(mat);
+        this->_matrix = matrixTemplate;
         this->_col = mat._col;
     } else throw SizeError();
 }
