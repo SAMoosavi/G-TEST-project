@@ -129,7 +129,7 @@ TEST_F(MatrixTest, MultipliedOperator) {
     auto matrix = mat.getMatrix(row, col);
     for (int i = 0; i < row; ++i) {
         for (int j = 0; j < col; ++j) {
-            ASSERT_EQ(matrix[i][j], 360 * (i + 1) * (j + 1));
+            ASSERT_EQ(matrix[i][j], 28 * (i + 1) * (j + 1));
         }
     }
 }
