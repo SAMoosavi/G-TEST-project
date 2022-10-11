@@ -49,27 +49,6 @@ cmake_ninja_workdir = /home/moosavi/Desktop/G_TEST$ matrix/cmake-build-debug/
 
 build cmake_object_order_depends_target_G_TEST_matrix: phony || CMakeFiles/G_TEST_matrix.dir
 
-build CMakeFiles/G_TEST_matrix.dir/src/Matrix.cpp.o: CXX_COMPILER__G_TEST_matrix_Debug /home/moosavi/Desktop/G_TEST$ matrix/src/Matrix.cpp || cmake_object_order_depends_target_G_TEST_matrix
-  DEP_FILE = CMakeFiles/G_TEST_matrix.dir/src/Matrix.cpp.o.d
-  FLAGS = -g -std=gnu++14
-  INCLUDES = -I"/home/moosavi/Desktop/G_TEST matrix/include"
-  OBJECT_DIR = CMakeFiles/G_TEST_matrix.dir
-  OBJECT_FILE_DIR = CMakeFiles/G_TEST_matrix.dir/src
-
-build CMakeFiles/G_TEST_matrix.dir/src/MatrixError.cpp.o: CXX_COMPILER__G_TEST_matrix_Debug /home/moosavi/Desktop/G_TEST$ matrix/src/MatrixError.cpp || cmake_object_order_depends_target_G_TEST_matrix
-  DEP_FILE = CMakeFiles/G_TEST_matrix.dir/src/MatrixError.cpp.o.d
-  FLAGS = -g -std=gnu++14
-  INCLUDES = -I"/home/moosavi/Desktop/G_TEST matrix/include"
-  OBJECT_DIR = CMakeFiles/G_TEST_matrix.dir
-  OBJECT_FILE_DIR = CMakeFiles/G_TEST_matrix.dir/src
-
-build CMakeFiles/G_TEST_matrix.dir/src/HelperFunctions.cpp.o: CXX_COMPILER__G_TEST_matrix_Debug /home/moosavi/Desktop/G_TEST$ matrix/src/HelperFunctions.cpp || cmake_object_order_depends_target_G_TEST_matrix
-  DEP_FILE = CMakeFiles/G_TEST_matrix.dir/src/HelperFunctions.cpp.o.d
-  FLAGS = -g -std=gnu++14
-  INCLUDES = -I"/home/moosavi/Desktop/G_TEST matrix/include"
-  OBJECT_DIR = CMakeFiles/G_TEST_matrix.dir
-  OBJECT_FILE_DIR = CMakeFiles/G_TEST_matrix.dir/src
-
 build CMakeFiles/G_TEST_matrix.dir/main.cpp.o: CXX_COMPILER__G_TEST_matrix_Debug /home/moosavi/Desktop/G_TEST$ matrix/main.cpp || cmake_object_order_depends_target_G_TEST_matrix
   DEP_FILE = CMakeFiles/G_TEST_matrix.dir/main.cpp.o.d
   FLAGS = -g -std=gnu++14
@@ -85,7 +64,7 @@ build CMakeFiles/G_TEST_matrix.dir/main.cpp.o: CXX_COMPILER__G_TEST_matrix_Debug
 #############################################
 # Link the executable G_TEST_matrix
 
-build G_TEST_matrix: CXX_EXECUTABLE_LINKER__G_TEST_matrix_Debug CMakeFiles/G_TEST_matrix.dir/src/Matrix.cpp.o CMakeFiles/G_TEST_matrix.dir/src/MatrixError.cpp.o CMakeFiles/G_TEST_matrix.dir/src/HelperFunctions.cpp.o CMakeFiles/G_TEST_matrix.dir/main.cpp.o
+build G_TEST_matrix: CXX_EXECUTABLE_LINKER__G_TEST_matrix_Debug CMakeFiles/G_TEST_matrix.dir/main.cpp.o
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/G_TEST_matrix.dir
   POST_BUILD = :
