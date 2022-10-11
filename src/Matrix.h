@@ -37,8 +37,9 @@ Matrix<T> Matrix<T>::operator+(const Matrix<T> &mat) {
 template<typename T>
 void Matrix<T>::add(const Matrix<T> &mat) {
     if (this->addValidation(mat)) {
+        auto matrixTemplate = this->adder(mat);
         HelperFunctions::deleteMatrix<T>(this->_row, this->_matrix);
-        this->_matrix = this->adder(mat);
+        this->_matrix = matrixTemplate;
     } else throw SizeError();
 }
 
@@ -73,8 +74,9 @@ Matrix<T> Matrix<T>::operator-(const Matrix<T> &mat) {
 template<typename T>
 void Matrix<T>::subtraction(const Matrix<T> &mat) {
     if (this->subtractionValidation(mat)) {
+        auto matrixTemplate = this->subtractioner(mat);
         HelperFunctions::deleteMatrix<T>(this->_row, this->_matrix);
-        this->_matrix = this->subtractioner(mat);
+        this->_matrix = matrixTemplate;
     } else throw SizeError();
 }
 
