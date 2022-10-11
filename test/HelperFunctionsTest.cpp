@@ -24,6 +24,7 @@ TEST(HelperFunctionsCreateMatrixTest, TypeInt) {
             EXPECT_EQ(matrix[i][j], 1);
         }
     }
+    HelperFunctions::deleteMatrix(row, matrix);
 }
 
 TEST(HelperFunctionsCreateMatrixTest, TypeFloat) {
@@ -35,6 +36,7 @@ TEST(HelperFunctionsCreateMatrixTest, TypeFloat) {
             EXPECT_FLOAT_EQ(matrix[i][j], 1.1f);
         }
     }
+    HelperFunctions::deleteMatrix(row, matrix);
 }
 
 TEST(HelperFunctionsCreateMatrixTest, TypeStr) {
@@ -46,6 +48,7 @@ TEST(HelperFunctionsCreateMatrixTest, TypeStr) {
             EXPECT_EQ(matrix[i][j], "test");
         }
     }
+    HelperFunctions::deleteMatrix(row, matrix);
 }
 
 TEST(HelperFunctionsCreateMatrixTest, NegativeSize) {
