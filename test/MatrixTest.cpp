@@ -24,6 +24,15 @@ auto Initialization(int row, int col, T value) {
     return new Matrix<T>(row, col, matrix);
 }
 
+template<typename T>
+void CheckValuesMatrix(T arg, int value, int row, int col) {
+    for (int i = 0; i < row; ++i) {
+        for (int j = 0; j < col; ++j) {
+            ASSERT_THAT(arg[i][j], value * (i + 1) * (j + 1));
+        }
+    }
+}
+
 
 class MatrixTest : public ::testing::Test {
 protected:
