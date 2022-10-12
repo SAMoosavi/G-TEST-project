@@ -281,6 +281,15 @@ G_TEST_matrix_IS_TOP_LEVEL:STATIC=ON
 //Value Computed by CMake
 G_TEST_matrix_SOURCE_DIR:STATIC=/home/moosavi/Desktop/G_TEST matrix
 
+//Value Computed by CMake
+Google_tests_BINARY_DIR:STATIC=/home/moosavi/Desktop/G_TEST matrix/cmake-build-debug/test
+
+//Value Computed by CMake
+Google_tests_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+Google_tests_SOURCE_DIR:STATIC=/home/moosavi/Desktop/G_TEST matrix/test
+
 //Enable installation of googletest. (Projects embedding googletest
 // may want to turn this OFF.)
 INSTALL_GTEST:BOOL=ON

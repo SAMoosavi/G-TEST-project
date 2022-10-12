@@ -5,7 +5,7 @@
 /home/moosavi/Desktop/G_TEST matrix/cmake-build-debug/CMakeFiles/install.dir
 /home/moosavi/Desktop/G_TEST matrix/cmake-build-debug/CMakeFiles/install/local.dir
 /home/moosavi/Desktop/G_TEST matrix/cmake-build-debug/CMakeFiles/install/strip.dir
-/home/moosavi/Desktop/G_TEST matrix/cmake-build-debug/test/CMakeFiles/G_TEST_run.dir
+/home/moosavi/Desktop/G_TEST matrix/cmake-build-debug/test/CMakeFiles/Google_Tests_run.dir
 /home/moosavi/Desktop/G_TEST matrix/cmake-build-debug/test/CMakeFiles/edit_cache.dir
 /home/moosavi/Desktop/G_TEST matrix/cmake-build-debug/test/CMakeFiles/rebuild_cache.dir
 /home/moosavi/Desktop/G_TEST matrix/cmake-build-debug/test/CMakeFiles/list_install_components.dir

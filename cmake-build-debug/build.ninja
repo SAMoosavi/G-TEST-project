@@ -144,44 +144,44 @@ build install/strip: phony CMakeFiles/install/strip.util
 # =============================================================================
 
 # =============================================================================
-# Object build statements for EXECUTABLE target G_TEST_run
+# Object build statements for EXECUTABLE target Google_Tests_run
 
 
 #############################################
-# Order-only phony target for G_TEST_run
+# Order-only phony target for Google_Tests_run
 
-build cmake_object_order_depends_target_G_TEST_run: phony || cmake_object_order_depends_target_gtest cmake_object_order_depends_target_gtest_main
+build cmake_object_order_depends_target_Google_Tests_run: phony || cmake_object_order_depends_target_gtest cmake_object_order_depends_target_gtest_main
 
-build test/CMakeFiles/G_TEST_run.dir/HelperFunctionsTest.cpp.o: CXX_COMPILER__G_TEST_run_Debug /home/moosavi/Desktop/G_TEST$ matrix/test/HelperFunctionsTest.cpp || cmake_object_order_depends_target_G_TEST_run
-  DEP_FILE = test/CMakeFiles/G_TEST_run.dir/HelperFunctionsTest.cpp.o.d
+build test/CMakeFiles/Google_Tests_run.dir/MatrixTest.cpp.o: CXX_COMPILER__Google_Tests_run_Debug /home/moosavi/Desktop/G_TEST$ matrix/test/MatrixTest.cpp || cmake_object_order_depends_target_Google_Tests_run
+  DEP_FILE = test/CMakeFiles/Google_Tests_run.dir/MatrixTest.cpp.o.d
   FLAGS = -g -std=gnu++14
-  INCLUDES = -isystem "/home/moosavi/Desktop/G_TEST matrix/test/lib/googletest-main/googletest/include" -isystem "/home/moosavi/Desktop/G_TEST matrix/test/lib/googletest-main/googletest"
-  OBJECT_DIR = test/CMakeFiles/G_TEST_run.dir
-  OBJECT_FILE_DIR = test/CMakeFiles/G_TEST_run.dir
+  INCLUDES = -I"/home/moosavi/Desktop/G_TEST matrix/test/lib/googletest-main/googlemock/include" -I"/home/moosavi/Desktop/G_TEST matrix/test/lib/googletest-main/googlemock" -isystem "/home/moosavi/Desktop/G_TEST matrix/test/lib/googletest-main/googletest/include" -isystem "/home/moosavi/Desktop/G_TEST matrix/test/lib/googletest-main/googletest"
+  OBJECT_DIR = test/CMakeFiles/Google_Tests_run.dir
+  OBJECT_FILE_DIR = test/CMakeFiles/Google_Tests_run.dir
 
-build test/CMakeFiles/G_TEST_run.dir/MatrixTest.cpp.o: CXX_COMPILER__G_TEST_run_Debug /home/moosavi/Desktop/G_TEST$ matrix/test/MatrixTest.cpp || cmake_object_order_depends_target_G_TEST_run
-  DEP_FILE = test/CMakeFiles/G_TEST_run.dir/MatrixTest.cpp.o.d
+build test/CMakeFiles/Google_Tests_run.dir/HelperFunctionsTest.cpp.o: CXX_COMPILER__Google_Tests_run_Debug /home/moosavi/Desktop/G_TEST$ matrix/test/HelperFunctionsTest.cpp || cmake_object_order_depends_target_Google_Tests_run
+  DEP_FILE = test/CMakeFiles/Google_Tests_run.dir/HelperFunctionsTest.cpp.o.d
   FLAGS = -g -std=gnu++14
-  INCLUDES = -isystem "/home/moosavi/Desktop/G_TEST matrix/test/lib/googletest-main/googletest/include" -isystem "/home/moosavi/Desktop/G_TEST matrix/test/lib/googletest-main/googletest"
-  OBJECT_DIR = test/CMakeFiles/G_TEST_run.dir
-  OBJECT_FILE_DIR = test/CMakeFiles/G_TEST_run.dir
+  INCLUDES = -I"/home/moosavi/Desktop/G_TEST matrix/test/lib/googletest-main/googlemock/include" -I"/home/moosavi/Desktop/G_TEST matrix/test/lib/googletest-main/googlemock" -isystem "/home/moosavi/Desktop/G_TEST matrix/test/lib/googletest-main/googletest/include" -isystem "/home/moosavi/Desktop/G_TEST matrix/test/lib/googletest-main/googletest"
+  OBJECT_DIR = test/CMakeFiles/Google_Tests_run.dir
+  OBJECT_FILE_DIR = test/CMakeFiles/Google_Tests_run.dir
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target G_TEST_run
+# Link build statements for EXECUTABLE target Google_Tests_run
 
 
 #############################################
-# Link the executable test/G_TEST_run
+# Link the executable test/Google_Tests_run
 
-build test/G_TEST_run: CXX_EXECUTABLE_LINKER__G_TEST_run_Debug test/CMakeFiles/G_TEST_run.dir/HelperFunctionsTest.cpp.o test/CMakeFiles/G_TEST_run.dir/MatrixTest.cpp.o | lib/libgtest.a lib/libgtest_main.a lib/libgtest.a || lib/libgtest.a lib/libgtest_main.a
+build test/Google_Tests_run: CXX_EXECUTABLE_LINKER__Google_Tests_run_Debug test/CMakeFiles/Google_Tests_run.dir/MatrixTest.cpp.o test/CMakeFiles/Google_Tests_run.dir/HelperFunctionsTest.cpp.o | lib/libgtest.a lib/libgtest_main.a lib/libgtest.a || lib/libgtest.a lib/libgtest_main.a
   FLAGS = -g
   LINK_LIBRARIES = lib/libgtest.a  lib/libgtest_main.a  lib/libgtest.a
-  OBJECT_DIR = test/CMakeFiles/G_TEST_run.dir
+  OBJECT_DIR = test/CMakeFiles/Google_Tests_run.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_FILE = test/G_TEST_run
-  TARGET_PDB = G_TEST_run.dbg
+  TARGET_FILE = test/Google_Tests_run
+  TARGET_PDB = Google_Tests_run.dbg
 
 
 #############################################
@@ -593,7 +593,7 @@ build test/lib/googletest-main/googletest/install/strip: phony test/lib/googlete
 # =============================================================================
 # Target aliases.
 
-build G_TEST_run: phony test/G_TEST_run
+build Google_Tests_run: phony test/Google_Tests_run
 
 build gmock: phony lib/libgmock.a
 
@@ -626,7 +626,7 @@ build all: phony G_TEST_matrix test/all
 #############################################
 # Folder: /home/moosavi/Desktop/G_TEST matrix/cmake-build-debug/test
 
-build test/all: phony test/G_TEST_run test/lib/googletest-main/all
+build test/all: phony test/Google_Tests_run test/lib/googletest-main/all
 
 # =============================================================================
 
