@@ -49,11 +49,7 @@ protected:
 TEST_F(MatrixTest, GetValueInMatrix) {
     int row, col;
     auto matrix1 = this->mat1->getMatrix(row, col);
-    for (int i = 0; i < row; ++i) {
-        for (int j = 0; j < col; ++j) {
-            ASSERT_EQ(matrix1[i][j], 1 * (i + 1) * (j + 1));
-        }
-    }
+    CheckValuesMatrix(matrix1, 1, row, col);
 }
 
 TEST_F(MatrixTest, AddFunction) {
@@ -62,11 +58,7 @@ TEST_F(MatrixTest, AddFunction) {
     auto mat2 = *this->mat2;
     mat1.add(mat2);
     auto matrix1 = mat1.getMatrix(row, col);
-    for (int i = 0; i < row; ++i) {
-        for (int j = 0; j < col; ++j) {
-            ASSERT_EQ(matrix1[i][j], 3 * (i + 1) * (j + 1));
-        }
-    }
+    CheckValuesMatrix(matrix1, 3, row, col);
 }
 
 TEST_F(MatrixTest, AddOperator) {
@@ -75,11 +67,7 @@ TEST_F(MatrixTest, AddOperator) {
     auto mat2 = *this->mat2;
     auto mat = mat1 + mat2;
     auto matrix = mat.getMatrix(row, col);
-    for (int i = 0; i < row; ++i) {
-        for (int j = 0; j < col; ++j) {
-            ASSERT_EQ(matrix[i][j], 3 * (i + 1) * (j + 1));
-        }
-    }
+    CheckValuesMatrix(matrix, 3, row, col);
 }
 
 TEST_F(MatrixTest, SizeErrorAdd) {
@@ -93,11 +81,7 @@ TEST_F(MatrixTest, SubtractionFanction) {
     auto mat2 = *this->mat2;
     mat1.subtraction(mat2);
     auto matrix1 = mat1.getMatrix(row, col);
-    for (int i = 0; i < row; ++i) {
-        for (int j = 0; j < col; ++j) {
-            ASSERT_EQ(matrix1[i][j], (-1) * (i + 1) * (j + 1));
-        }
-    }
+    CheckValuesMatrix(matrix1, -1, row, col);
 }
 
 TEST_F(MatrixTest, SubtractionOperator) {
@@ -106,11 +90,7 @@ TEST_F(MatrixTest, SubtractionOperator) {
     auto mat2 = *this->mat2;
     auto mat = mat1 - mat2;
     auto matrix = mat.getMatrix(row, col);
-    for (int i = 0; i < row; ++i) {
-        for (int j = 0; j < col; ++j) {
-            ASSERT_EQ(matrix[i][j], (-1) * (i + 1) * (j + 1));
-        }
-    }
+    CheckValuesMatrix(matrix, -1, row, col);
 }
 
 TEST_F(MatrixTest, SizeErrorSubtraction) {
@@ -124,12 +104,7 @@ TEST_F(MatrixTest, MultipliedFanction) {
     auto mat4 = *this->mat4;
     mat3.multiplied(mat4);
     auto matrix = mat3.getMatrix(row, col);
-    for (int i = 0; i < row; ++i) {
-        for (int j = 0; j < col; ++j) {
-            ASSERT_EQ(matrix[i][j], 360 * (i + 1) * (j + 1));
-        }
-        std::cout << std::endl;
-    }
+    CheckValuesMatrix(matrix, 360, row, col);
 }
 
 TEST_F(MatrixTest, MultipliedOperator) {
@@ -138,11 +113,7 @@ TEST_F(MatrixTest, MultipliedOperator) {
     auto mat2 = *this->mat2;
     auto mat = mat1 * mat2;
     auto matrix = mat.getMatrix(row, col);
-    for (int i = 0; i < row; ++i) {
-        for (int j = 0; j < col; ++j) {
-            ASSERT_EQ(matrix[i][j], 28 * (i + 1) * (j + 1));
-        }
-    }
+    CheckValuesMatrix(matrix, 28, row, col);
 }
 
 TEST_F(MatrixTest, SizeErrorMultiplied) {
