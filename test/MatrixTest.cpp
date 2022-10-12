@@ -4,7 +4,9 @@
 
 #include "gtest/gtest.h"
 #include "../include/Matrix.h"
-// #include "gmock/gmock.h" // TODO: find error: gmock/gmock.h: No such file or directory
+#include "gmock/gmock.h"
+
+using namespace ::testing;
 
 template<typename T>
 void setValueInMatrix(int row, int col, T **matrix, double value) {
