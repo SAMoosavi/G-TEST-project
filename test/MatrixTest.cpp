@@ -75,7 +75,7 @@ TEST_F(MatrixTest, SizeErrorAdd) {
     EXPECT_THROW(this->mat3->add(*this->mat4), SizeError);
 }
 
-TEST_F(MatrixTest, SubtractionFanction) {
+TEST_F(MatrixTest, SubtractionFunction) {
     int row, col;
     auto mat1 = *this->mat1;
     auto mat2 = *this->mat2;
@@ -98,7 +98,7 @@ TEST_F(MatrixTest, SizeErrorSubtraction) {
     EXPECT_THROW(this->mat3->subtraction(*this->mat4), SizeError);
 }
 
-TEST_F(MatrixTest, MultipliedFanction) {
+TEST_F(MatrixTest, MultipliedFunction) {
     int row, col;
     auto mat3 = *this->mat3;
     auto mat4 = *this->mat4;
@@ -121,7 +121,7 @@ TEST_F(MatrixTest, SizeErrorMultiplied) {
     EXPECT_THROW(this->mat4->subtraction(*this->mat3), SizeError);
 }
 
-TEST_F(MatrixTest, EqualFanction) {
+TEST_F(MatrixTest, EqualFunction) {
     auto mat1 = *this->mat1;
     auto mat1copy = *this->mat1;
     ASSERT_TRUE(mat1.equal(mat1copy));
@@ -133,7 +133,7 @@ TEST_F(MatrixTest, EqualOperator) {
     ASSERT_TRUE(mat1 == mat1copy);
 }
 
-TEST_F(MatrixTest, NotEqualInValueFanction) {
+TEST_F(MatrixTest, NotEqualInValueFunction) {
     auto mat1 = *this->mat1;
     auto mat2 = *this->mat2;
     ASSERT_FALSE(mat1.equal(mat2));
@@ -145,7 +145,7 @@ TEST_F(MatrixTest, NotEqualInValueOperator) {
     ASSERT_FALSE(mat1 == mat2);
 }
 
-TEST_F(MatrixTest, NotEqualInSizeFanction) {
+TEST_F(MatrixTest, NotEqualInSizeFunction) {
     auto mat1 = *this->mat1;
     auto mat3 = *this->mat3;
     ASSERT_FALSE(mat1.equal(mat3));
