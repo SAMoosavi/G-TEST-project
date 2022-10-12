@@ -4,9 +4,9 @@ project(G_TEST_matrix)
 set(CMAKE_CXX_STANDARD 14)
 
 set(SOURCES
-        src/Matrix.h
-        src/MatrixError.h
-        src/HelperFunctions.h
+        src/Matrix_impl.h
+        src/MatrixError_impl.h
+        src/HelperFunctions_impl.h
         main.cpp
         )
 
