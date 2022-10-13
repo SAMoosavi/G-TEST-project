@@ -49,6 +49,7 @@ protected:
 TEST_F(MatrixTest, GetValueInMatrix) {
     int row, col;
     auto matrix1 = this->mat1->getMatrix(row, col);
+    SCOPED_TRACE("MatrixTest.GetValueInMatrix");
     CheckValuesMatrix(matrix1, 1, row, col);
 }
 
@@ -58,6 +59,7 @@ TEST_F(MatrixTest, AddFunction) {
     auto mat2 = *this->mat2;
     mat1.add(mat2);
     auto matrix1 = mat1.getMatrix(row, col);
+    SCOPED_TRACE("MatrixTest.AddFunction");
     CheckValuesMatrix(matrix1, 3, row, col);
 }
 
@@ -67,6 +69,7 @@ TEST_F(MatrixTest, AddOperator) {
     auto mat2 = *this->mat2;
     auto mat = mat1 + mat2;
     auto matrix = mat.getMatrix(row, col);
+    SCOPED_TRACE("MatrixTest.AddOperator");
     CheckValuesMatrix(matrix, 3, row, col);
 }
 
@@ -81,6 +84,7 @@ TEST_F(MatrixTest, SubtractionFunction) {
     auto mat2 = *this->mat2;
     mat1.subtraction(mat2);
     auto matrix1 = mat1.getMatrix(row, col);
+    SCOPED_TRACE("MatrixTest.SubtractionFunction");
     CheckValuesMatrix(matrix1, -1, row, col);
 }
 
@@ -90,6 +94,7 @@ TEST_F(MatrixTest, SubtractionOperator) {
     auto mat2 = *this->mat2;
     auto mat = mat1 - mat2;
     auto matrix = mat.getMatrix(row, col);
+    SCOPED_TRACE("MatrixTest.SubtractionOperator");
     CheckValuesMatrix(matrix, -1, row, col);
 }
 
@@ -104,6 +109,7 @@ TEST_F(MatrixTest, MultipliedFunction) {
     auto mat4 = *this->mat4;
     mat3.multiplied(mat4);
     auto matrix = mat3.getMatrix(row, col);
+    SCOPED_TRACE("MatrixTest.MultipliedFunction");
     CheckValuesMatrix(matrix, 360, row, col);
 }
 
@@ -113,6 +119,7 @@ TEST_F(MatrixTest, MultipliedOperator) {
     auto mat2 = *this->mat2;
     auto mat = mat1 * mat2;
     auto matrix = mat.getMatrix(row, col);
+    SCOPED_TRACE("MatrixTest.MultipliedOperator");
     CheckValuesMatrix(matrix, 28, row, col);
 }
 
