@@ -29,6 +29,7 @@ TEST(HelperFunctionsCreateMatrixTest, TypeInt) {
     int row = 8, col = 4;
     auto matrix = HelperFunctions::createMatrix<int>(row, col);
     setValueInMatrix(row, col, matrix, 1);
+    SCOPED_TRACE("HelperFunctionsCreateMatrixTest.TypeInt");
     CheckValuesMatrix(matrix, 1, row, col);
     HelperFunctions::deleteMatrix(row, matrix);
 }
@@ -49,6 +50,7 @@ TEST(HelperFunctionsCreateMatrixTest, TypeStr) {
     int row = 8, col = 4;
     auto matrix = HelperFunctions::createMatrix<std::string>(row, col);
     setValueInMatrix(row, col, matrix, std::string("test"));
+    SCOPED_TRACE("HelperFunctionsCreateMatrixTest.TypeStr");
     CheckValuesMatrix(matrix, std::string("test"), row, col);
     HelperFunctions::deleteMatrix(row, matrix);
 }
