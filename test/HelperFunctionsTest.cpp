@@ -5,6 +5,7 @@
 
 #include "gtest/gtest.h"
 #include "../include/HelperFunctions.h"
+#include "gmock/gmock.h"
 
 template<typename T>
 void setValueInMatrix(int row, int col, T **matrix, T value) {
@@ -15,15 +16,20 @@ void setValueInMatrix(int row, int col, T **matrix, T value) {
     }
 }
 
+template<typename T>
+void CheckValuesMatrix(T **arg, T value, int row, int col) {
+    for (int i = 0; i < row; ++i) {
+        for (int j = 0; j < col; ++j) {
+            ASSERT_THAT(arg[i][j], value);
+        }
+    }
+}
+
 TEST(HelperFunctionsCreateMatrixTest, TypeInt) {
     int row = 8, col = 4;
     auto matrix = HelperFunctions::createMatrix<int>(row, col);
     setValueInMatrix(row, col, matrix, 1);
-    for (int i = 0; i < row; ++i) {
-        for (int j = 0; j < col; ++j) {
-            EXPECT_EQ(matrix[i][j], 1);
-        }
-    }
+    CheckValuesMatrix(matrix, 1, row, col);
     HelperFunctions::deleteMatrix(row, matrix);
 }
 
@@ -43,11 +49,7 @@ TEST(HelperFunctionsCreateMatrixTest, TypeStr) {
     int row = 8, col = 4;
     auto matrix = HelperFunctions::createMatrix<std::string>(row, col);
     setValueInMatrix(row, col, matrix, std::string("test"));
-    for (int i = 0; i < row; ++i) {
-        for (int j = 0; j < col; ++j) {
-            EXPECT_EQ(matrix[i][j], "test");
-        }
-    }
+    CheckValuesMatrix(matrix, std::string("test"), row, col);
     HelperFunctions::deleteMatrix(row, matrix);
 }
 
@@ -66,5 +68,5 @@ TEST(HelperFunctionsDeleteMatrixTest, DeleteTest) {
     auto matrix = HelperFunctions::createMatrix<float>(3, 4);
     setValueInMatrix(row, col, matrix, 1.1f);
     HelperFunctions::deleteMatrix(row, matrix);
-    EXPECT_EQ(matrix, nullptr);
+    EXPECT_THAT(matrix, ::testing::IsNull());
 }
